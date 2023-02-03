@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('archive') {
+      steps {
+        archiveArtifacts 'artifactory'
+      }
+    }
+
   }
 }
